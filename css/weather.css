@@ -1,0 +1,26 @@
+.weather_div {
+    margin-top: 20px;
+    padding: 20px;
+    color: #626262;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #626262;
+    background: linear-gradient(#dcf1ff, #ffffff);
+ }
+ .weather_div_place {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+ }
+ .wether_icons  {
+    height: 12px;
+ }
+ .wind_icons  {
+    height: 40px;
+    margin-top: 10px;
+}

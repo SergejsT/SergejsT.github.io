@@ -1,0 +1,455 @@
+<?php 
+  include("php/darbs.php")
+
+?>
+<!DOCTYPE html>
+<html lang="en"> <!--Diploma darbs -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Filament | qLines.lv">
+    <meta name="keywords" content="3d | filament | plastic| ABS | PLA | TPU | PETG">
+    <meta name="description" content="Noslēguma praktiskā darbs">
+    <meta name="autor" content="Sergejs Timofejevs">
+     <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>qLines</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/darbi.css">
+  </head>
+<body>
+  <header class="zz fixed-top">
+   
+    
+    <div class="panel_wrapper">
+      Noslēguma praktiskais darbs
+      <img class="panel_wrapper_img" src="icons/rtu-logo.png" alt="logo"></a>
+    </div>
+  
+
+
+
+
+   <div class="subheader">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 offset-md-1">
+              <a href="#" class="subheader_logo"><img src="icons/logo.png" alt="logo"></a>
+              <div class="subheader_official">3D print filaments</div>
+          </div>
+          <div class="col-md-4 offset-md-3">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-info" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <!-- <div class="container-fluid"> -->
+          <!-- <a class="navbar-brand" href="#">qLines</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Kontakti</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Praktiskie darbi
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Loģikas uzdevums</a></li>
+                <li><a class="dropdown-item" href="#">Ciklu uzdevumus</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="language" id="f_language">
+          English
+        </div>
+        <div class="language_flags">
+            <button class="language_button" onclick="lang_button_click('lv')"> 
+              <img class="language_img" src="icons/LV.png" alt="LV">
+            </button>
+            <button class="language_button" onclick="lang_button_click('en')">
+              <img class="language_img" src="icons/EN.png" alt="EN">
+            </button>
+            <button class="language_button" onclick="lang_button_click('ru')">
+              <img class="language_img" src="icons/RU.png" alt="RU">
+            </button>
+          </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="main_body">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+
+
+          
+
+
+          <section class="catalog">
+            <div class="container">
+              <h1 class=" ">Catalog</h1>
+                <ul class="catalog_tabs">
+                  <li class="catalog_tab active"><div class="catalog_tab_name">PLA</div></li>
+                  <li class="catalog_tab"><div class="catalog_tab_name">abs</div></li>
+                  <li class="catalog_tab"><div class="catalog_tab_name">PEDG</div></li>
+                </ul>
+                <div class="catalog_content active">
+                  <div class="catalog_item">
+                    <img src="img/fil/blue_Spool.jpg" alt="" class="catalog_img">
+                    <div class="catalog_subtitle">PLA Blue</div>
+                    <div class="catalog_item_descr">qLines PLA 1.75mm 1kg - solid Blue</div>
+                    <hr>
+
+                    <div class="catalog_item_footer">
+                      <div class="catalog_item_prices">
+                        <div class="catalog_item_price">€15.48</div>
+                      </div>
+                      <button class="btn btn-outline-info catalog_item_btn">Add to Card</button>
+
+                    </div>
+
+
+                  </div>
+                  <div class="catalog_item">
+                    <img src="img/fil/Black_Spool.jpg" alt="" class="catalog_img">
+                    <div class="catalog_subtitle">PLA Black</div>
+                    <div class="catalog_item_descr">qLines PLA 1.75mm 1kg - solid Black</div>
+                    <hr>
+
+                    <div class="catalog_item_footer">
+                      <div class="catalog_item_prices">
+                        <div class="catalog_item_price">€15.48</div>
+                      </div>
+                      <button class="btn btn-outline-info catalog_item_btn">Add to Card</button>
+
+                    </div>
+
+
+                  </div>
+                  <div class="catalog_item">
+                    <img src="img/fil/bluegrey_Spool.jpg" alt="" class="catalog_img">
+                    <div class="catalog_subtitle">PLA Blue-grey</div>
+                    <div class="catalog_item_descr">qLines PLA 1.75mm 1kg - solid Blue-grey</div>
+                    <hr>
+
+                    <div class="catalog_item_footer">
+                      <div class="catalog_item_prices">
+                        <div class="catalog_item_price">€15.48</div>
+                      </div>
+                      <button class="btn btn-outline-info catalog_item_btn">Add to Card</button>
+
+                    </div>
+
+
+                  </div>
+                  <div class="catalog_item">
+                    <img src="img/fil/clear_Spool.jpg" alt="" class="catalog_img">
+                    <div class="catalog_subtitle">PLA Clear</div>
+                    <div class="catalog_item_descr">qLines PLA 1.75mm 1kg - solid Clear</div>
+                    <hr>
+
+                    <div class="catalog_item_footer">
+                      <div class="catalog_item_prices">
+                        <div class="catalog_item_price">€15.48</div>
+                      </div>
+                      <button class="btn btn-outline-info catalog_item_btn">Add to Card</button>
+
+                    </div>
+
+
+                  </div>
+                </div>
+                <div class="catalog_content">
+                  <div class="catalog_item">
+                    <img src="img/fil/fluo_green_Spool.jpg" alt="" class="catalog_img">
+                    <div class="catalog_subtitle">ABS Fluo-Green</div>
+                    <div class="catalog_item_descr">qLines ABS 1.75mm 1kg - Fluo-Green</div>
+                    <hr>
+
+                    <div class="catalog_item_footer">
+                      <div class="catalog_item_prices">
+                        <div class="catalog_item_price">€14.32</div>
+                      </div>
+                      <button class="btn btn-outline-info catalog_item_btn">Add to Card</button>
+
+                    </div>
+
+
+                  </div>
+                  <div class="catalog_item">
+                    <img src="img/fil/green_Spool.jpg" alt="" class="catalog_img">
+                    <div class="catalog_subtitle">ABS Green</div>
+                    <div class="catalog_item_descr">qLines ABS 1.75mm 1kg - solid Green</div>
+                    <hr>
+
+                    <div class="catalog_item_footer">
+                      <div class="catalog_item_prices">
+                        <div class="catalog_item_price">€14.32</div>
+                      </div>
+                      <button class="btn btn-outline-info catalog_item_btn">Add to Card</button>
+
+                    </div>
+
+
+                  </div>
+                  <div class="catalog_item">
+                    <img src="img/fil/grey_Spool.jpg" alt="" class="catalog_img">
+                    <div class="catalog_subtitle">ABS Grey</div>
+                    <div class="catalog_item_descr">qLines ABS 1.75mm 1kg - solid Grey</div>
+                    <hr>
+
+                    <div class="catalog_item_footer">
+                      <div class="catalog_item_prices">
+                        <div class="catalog_item_price">€14.32</div>
+                      </div>
+                      <button class="btn btn-outline-info catalog_item_btn">Add to Card</button>
+
+                    </div>
+
+
+                  </div>
+                </div>
+                <div class="catalog_content">
+                  <div class="catalog_item">
+                    <img src="img/fil/light_grey_Spool.jpg" alt="" class="catalog_img">
+                    <div class="catalog_subtitle">PET-G Light Grey</div>
+                    <div class="catalog_item_descr">qLines PET-G 1.75mm 1kg - solid Light Grey</div>
+                    <hr>
+
+                    <div class="catalog_item_footer">
+                      <div class="catalog_item_prices">
+                        <div class="catalog_item_price">€16.05</div>
+                      </div>
+                      <button class="btn btn-outline-info catalog_item_btn">Add to Card</button>
+
+                    </div>
+
+
+                  </div>
+                  <div class="catalog_item">
+                    <img src="img/fil/orange_Spool.jpg" alt="" class="catalog_img">
+                    <div class="catalog_subtitle">PET-G Orange</div>
+                    <div class="catalog_item_descr">qLines PET-G 1.75mm 1kg - solid Orange</div>
+                    <hr>
+
+                    <div class="catalog_item_footer">
+                      <div class="catalog_item_prices">
+                        <div class="catalog_item_price">€16.05</div>
+                      </div>
+                      <button class="btn btn-outline-info catalog_item_btn">Add to Card</button>
+
+                    </div>
+
+
+                  </div>
+                </div>
+
+            </div>
+
+          </section>
+ 
+
+
+
+        </div>
+        <div class="col-md-2">
+          <div class="weather_div">
+            <div class="weather_div_place">
+              <span id="local_city"></span>
+              <span id="local_country"></span>
+            </div> 
+            <div class="weather_div_date">
+              <span id="date"></span>
+              <span id="time"></span>
+            </div> 
+            <img src="" id="weatherImg" class="center-block">
+            <div id="weather-text"></div>
+            <h2 class="text-center data-item noselect"><span id="temp-text"></span> <span id="tempMode">C&deg</span></h2>
+            
+              <img class="wether_icons" src="icons/humidity.png">
+              <span id="local_humidity""></span><br>
+              <img class="wether_icons" src="icons/pressure.png">
+              <span id="local_pressure"></span><br>
+              <img class="wether_icons" src="icons/wind.png">
+              <span id="local_wind"></span><br>
+              <img src="" id="wingImg" class="wind_icons"><br>
+              <span id="local_wind_dir"></span><br>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="contact">
+            <div class="contact_map">
+              <iframe width="100%"
+              height="630" 
+              id="gmap_canvas" 
+              src="https://maps.google.com/maps?q=Krustabazn%C4%ABcas%20iela%209a&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+              frameborder="0" 
+              scrolling="no" 
+              marginheight="0" 
+              marginwidth="0">
+            </iframe>
+            </div>
+            <div class="contact_info">
+              <address class="contact_address">Krustabaznīcas iela 9a – 19, Rīga</address>
+              <a class="contact_phone" href="+37112345678">(+371) 12345678"</a>
+              <div class="contact_social">
+                <a href="#" class="contact_social_items"><img class="contact_img" src="icons/facebook.svg" alt="Facebook"></a>
+                <a href="#" class="contact_social_items"><img class="contact_img" src="icons/instagram.svg" alt="Instagram"></a>
+                <a href="#" class="contact_social_items"><img class="contact_img" src="icons/WhatsApp-1.svg" alt="WhatsApp"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+<!-- ___________________________________ -->
+
+    <div class="wrapper container-sm">
+    
+      <h2 class="PD_h2">Praktiskie darbi</h2> 
+    
+    
+      <section class="PD_btn">
+        <ul class="catalog_tabs">
+          <li class="catalog_tab active"><div class="catalog_tab_name" onclick="qqqq(1)">One style</div></li>
+          <li class="catalog_tab"><div class="catalog_tab_name" onclick="qqqq(2)">Second style</div></li>
+          <li class="catalog_tab"><div class="catalog_tab_name" onclick="qqqq(3)">Third style</div></li>
+        </ul>
+      </section>
+  
+      <section class="PD_1">
+        <h3 class="PD_h3">Loģikas un ciklu uzdevums ar ievades formu</h3>
+        <div class="row d-flex">
+          <div class="col-md-4 mb-3">
+            <section class="PD_forma">
+              <div class="PD_subtitle">Produkta ievadīšana</div>
+                <form action="" class="PD_input_form feed-form_mt25" method="post" onsubmit="PD_forma_addRow();return false;">
+                  <input type="text" name="names" id="PD_input_form_name" required class="PD_input_form_input" placeholder="Preces nosaukums" tabindex="1" />
+                  <input type="number" name="quantity" id="PD_input_form_quantity" required class="PD_input_form_input" placeholder="Daudzums" tabindex="2" />
+                  <input type="number" step="0.01" name="price" id="PD_input_form_price" required class="PD_input_form_input" placeholder="Cena" tabindex="3" />
+                  <div id"demo"></div>
+                  <input type="submit" name="subm" class="btn btn-outline-info button_submit" value="Pievienot" tabindex="4" />
+                </form>
+
+            </section>
+          </div> 
+          <div class="col-md-8">
+            <section class="PD_forma">
+              <h3 class="PD_subtitle">Grozā:</h3> 
+              <table id="PD_table" class="table table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th> 
+                    <th scope="col">Nosaukums</th> 
+                    <th scope="col">Daudzums</th> 
+                    <th scope="col">Cena</th> 
+                    <th scope="col">Summa</th> 
+                    <th scope="col">Summa, ja cena > 10</th>
+                  </tr>
+                </thead> 
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="1"></td>
+                    <td>Kopā:</td>
+                    <td id="f_quantity">0</td>
+                    <td colspan="1"></td>
+                    <td id="f_summa">0</td>
+                    <td id="f_maxim">0</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </section> 
+          </div>
+        </div>
+      </section>
+    
+      <section class="PD_1">
+        <h3 class="PD_h3">Jautrs uzdevums</h3>
+        <div class="row d-flex">
+          <div class="col-md-4 mb-3">
+            <section class="PD_forma PD_forma_mini">
+              <div class="PD_subtitle">Ievadiet skaitli</div>
+                <form action="" class="PD_input_form feed-form_mt25" method="post" onsubmit="PD_forma_fun();return false;">
+                  <input type="number" name="quantity" id="PD_input_form_fun" required class="PD_input_form_input" placeholder="Daudzums" tabindex="1" />
+                
+                  <input type="submit" name="subm" class="btn btn-outline-info button_submit" value="Pievienot" tabindex="2" />
+                </form>
+
+            </section>
+          </div> 
+          <div class="col-md-8">
+            <section class="PD_forma PD_forma_mini">
+              <h3 class="PD_subtitle">Atbilde:</h3> 
+              <div id="f_fun">
+
+              </div>
+            </section> 
+          </div>
+        </div>
+      </section>
+
+    
+    
+    </div>
+  
+
+
+
+
+
+  <fotter class="copyright">
+    <span>Sergejs Timofejevs, grupa GR-56 © 2021</span>
+  </fotter>
+    <script src="js/script.js"></script>
+
+    <!-- API Weather -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/weather.js"></script>
+
+    <script src="js/catalog.js"></script>
+    <script src="js/darbi.js"></script>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> -->
+
+  </body>
+</html>

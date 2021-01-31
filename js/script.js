@@ -1,17 +1,24 @@
-window.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('.menu'),
-    menuItem = document.querySelectorAll('.menu_item'),
-    hamburger = document.querySelector('.hamburger');
+let lang = document.getElementById("f_language");
 
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('hamburger_active');
-        menu.classList.toggle('menu_active');
-    });
+//'Latvieski';
+function lang_button_click(lang_f){
+    if (lang_f == 'en') {
+        lang.innerHTML = "English";
+    } else if (lang_f == 'ru') {
+        lang.innerHTML = "Русский";
+    } else {
+        lang.innerHTML = "Latviešu";
+    } 
 
-    menuItem.forEach(item => {
-        item.addEventListener('click', () => {
-            hamburger.classList.toggle('hamburger_active');
-            menu.classList.toggle('menu_active');
-        })
-    })
-})
+}
+
+$(document).ready(function(){
+   
+    $('ul.navbar-nav').on('click', 'li:not(.active)', function() {
+        $(this)
+          .addClass('active').siblings().removeClass('active')
+          .closest('div.container').find('div.catalog_content').removeClass('active').eq($(this).index()).addClass('active');
+      });
+      
+
+});
